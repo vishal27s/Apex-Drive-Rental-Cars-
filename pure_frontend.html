@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexDrive | Pure HTML & CSS Template</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #05070f;
+            color: #e2e8f0;
+        }
+        .royal-font {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .royal-gradient {
+            background: linear-gradient(135deg, #1d4ed8 0%, #4169E1 50%, #1e3a8a 100%);
+        }
+        .royal-glow {
+            box-shadow: 0 0 30px rgba(29, 78, 216, 0.35);
+        }
+        .gold-line {
+            background: linear-gradient(90deg, transparent, #c9a961, transparent);
+        }
+        .bg-hero-royal {
+            background-color: #05070f;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(29, 78, 216, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 60%, rgba(65, 105, 225, 0.1) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- ========================================== -->
+    <!-- HEADER / NAVIGATION                        -->
+    <!-- ========================================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#05070f]/90 backdrop-blur-xl border-b border-blue-900/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-lg royal-gradient flex items-center justify-center shadow-lg royal-glow">
+                    <i class="fa-solid fa-crown text-white text-lg"></i>
+                </div>
+                <div class="leading-none">
+                    <div class="text-xl font-extrabold tracking-tight text-white">ApexDrive</div>
+                    <div class="text-[9px] tracking-[0.3em] text-blue-400 uppercase font-semibold">Royal Rentals</div>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-1">
+                <a href="#home" class="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase text-white hover:text-blue-400 transition-colors">Home</a>
+                <a href="#about" class="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase text-slate-400 hover:text-blue-400 transition-colors">About Us</a>
+                <a href="#booking" class="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase text-slate-400 hover:text-blue-400 transition-colors">Booking</a>
+                <a href="#contact" class="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase text-slate-400 hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#booking" class="hidden md:inline-flex royal-gradient text-white font-bold px-6 py-2.5 rounded-lg shadow-lg royal-glow text-sm tracking-wider uppercase">
+                Reserve Now
+            </a>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- HOME SECTION                               -->
+    <!-- ========================================== -->
+    <section id="home" class="relative min-h-screen bg-hero-royal pt-32 pb-20 flex items-center overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center relative z-10 w-full">
+            <div class="space-y-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-[1px] gold-line"></div>
+                    <span class="text-xs tracking-[0.4em] text-amber-400 uppercase font-semibold">Premium Car Rental</span>
+                </div>
+
+                <h1 class="royal-font text-6xl lg:text-8xl font-bold leading-[0.95] text-white">
+                    Drive in
+                    <span class="block italic text-blue-400">Royalty.</span>
+                </h1>
+
+                <p class="text-lg text-slate-400 leading-relaxed max-w-lg font-light">
+                    Experience the pinnacle of luxury driving. Our curated fleet delivers unmatched elegance and sophistication.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#booking" class="royal-gradient text-white font-bold px-8 py-4 rounded-lg shadow-xl royal-glow text-sm tracking-widest uppercase">
+                        <i class="fa-solid fa-calendar-check mr-2"></i> Book Now
+                    </a>
+                    <a href="#about" class="bg-transparent border-2 border-blue-800 text-blue-300 hover:bg-blue-900/30 font-bold px-8 py-4 rounded-lg text-sm tracking-widest uppercase">
+                        Discover More
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -inset-4 royal-gradient rounded-3xl blur-2xl opacity-30"></div>
+                <div class="relative bg-[#0b1020] rounded-3xl p-3 border border-blue-900/50 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80" alt="Luxury Car" class="rounded-2xl w-full h-[500px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ABOUT US SECTION                           -->
+    <!-- ========================================== -->
+    <section id="about" class="py-24 bg-[#0a0e27] border-y border-blue-900/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="flex items-center justify-center gap-3">
+                    <div class="w-12 h-[1px] gold-line"></div>
+                    <span class="text-xs tracking-[0.4em] text-amber-400 uppercase font-semibold">About Us</span>
+                    <div class="w-12 h-[1px] gold-line"></div>
+                </div>
+                <h2 class="royal-font text-5xl font-bold text-white">
+                    The Art of <span class="italic text-blue-400">Premium</span> Mobility
+                </h2>
+                <p class="text-slate-400 leading-relaxed font-light">
+                    For over a decade, ApexDrive has redefined the car rental experience with uncompromising luxury and meticulous service.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-8">
+                    <div class="w-14 h-14 rounded-xl royal-gradient flex items-center justify-center text-white text-xl mb-6 shadow-lg royal-glow">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="royal-font text-2xl font-bold text-white mb-3">Curated Luxury</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Every vehicle is hand-selected and meticulously maintained to ensure a royal experience.
+                    </p>
+                </div>
+
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-8">
+                    <div class="w-14 h-14 rounded-xl royal-gradient flex items-center justify-center text-white text-xl mb-6 shadow-lg royal-glow">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="royal-font text-2xl font-bold text-white mb-3">Total Peace of Mind</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Comprehensive insurance, 24/7 roadside assistance, and transparent pricing.
+                    </p>
+                </div>
+
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-8">
+                    <div class="w-14 h-14 rounded-xl royal-gradient flex items-center justify-center text-white text-xl mb-6 shadow-lg royal-glow">
+                        <i class="fa-solid fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="royal-font text-2xl font-bold text-white mb-3">Concierge Service</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        From airport pickup to personalized itineraries, our team crafts unforgettable experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- BOOKING SECTION                            -->
+    <!-- ========================================== -->
+    <section id="booking" class="py-24 bg-[#05070f]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="flex items-center justify-center gap-3">
+                    <div class="w-12 h-[1px] gold-line"></div>
+                    <span class="text-xs tracking-[0.4em] text-amber-400 uppercase font-semibold">Booking</span>
+                    <div class="w-12 h-[1px] gold-line"></div>
+                </div>
+                <h2 class="royal-font text-5xl font-bold text-white">
+                    Select Your <span class="italic text-blue-400">Chariot</span>
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Choose from our distinguished fleet and reserve your vehicle below.
+                </p>
+            </div>
+
+            <!-- Sample Car Cards (For JSP Integration) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Car Card Example -->
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl overflow-hidden hover:border-blue-600/50 transition-all group flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="BMW" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 left-4 bg-[#05070f]/90 border border-blue-900/50 px-3 py-1 text-[10px] font-bold text-blue-400 uppercase tracking-widest rounded">Luxury</div>
+                        <div class="absolute bottom-4 right-4 royal-gradient px-4 py-2 rounded-lg text-white font-bold text-lg shadow-lg">$240<span class="text-xs font-normal opacity-80">/day</span></div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="royal-font text-2xl font-bold text-white mb-3">BMW M8 Gran Coupe</h3>
+                        <div class="flex gap-4 text-xs text-slate-400 mb-6 pb-6 border-b border-blue-900/30">
+                            <span><i class="fa-solid fa-gear text-blue-400 mr-1"></i> Auto</span>
+                            <span><i class="fa-solid fa-user text-blue-400 mr-1"></i> 4 Seats</span>
+                            <span><i class="fa-solid fa-gas-pump text-blue-400 mr-1"></i> Petrol</span>
+                        </div>
+                        <form class="space-y-3 mt-auto">
+                            <input type="text" required placeholder="Full Name" class="w-full bg-[#05070f] border border-blue-900/40 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-600">
+                            <input type="tel" required placeholder="Phone Number" class="w-full bg-[#05070f] border border-blue-900/40 rounded-lg px-4 py-2.5 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-600">
+                            <input type="date" required class="w-full bg-[#05070f] border border-blue-900/40 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-blue-600">
+                            <button type="button" class="w-full royal-gradient text-white font-bold py-3 rounded-lg shadow-lg royal-glow text-xs tracking-widest uppercase">
+                                Reserve Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CONTACT SECTION                            -->
+    <!-- ========================================== -->
+    <section id="contact" class="py-24 bg-[#0a0e27] border-t border-blue-900/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="flex items-center justify-center gap-3">
+                    <div class="w-12 h-[1px] gold-line"></div>
+                    <span class="text-xs tracking-[0.4em] text-amber-400 uppercase font-semibold">Contact</span>
+                    <div class="w-12 h-[1px] gold-line"></div>
+                </div>
+                <h2 class="royal-font text-5xl font-bold text-white">
+                    Get in <span class="italic text-blue-400">Touch</span>
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Our concierge team is ready to assist you.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-6 flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-lg royal-gradient flex items-center justify-center text-white flex-shrink-0 shadow-lg royal-glow">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-1">Visit Our Showroom</h4>
+                        <p class="text-slate-400 text-sm">125 Royal Avenue, Manhattan<br>New York, NY 10001</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-6 flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-lg royal-gradient flex items-center justify-center text-white flex-shrink-0 shadow-lg royal-glow">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-1">Call Our Concierge</h4>
+                        <p class="text-slate-400 text-sm">+1 (555) 123-4567<br>Available 24/7</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-6 flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-lg royal-gradient flex items-center justify-center text-white flex-shrink-0 shadow-lg royal-glow">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-1">Email Us</h4>
+                        <p class="text-slate-400 text-sm">concierge@apexdrive.com</p>
+                    </div>
+                </div>
+
+                <div class="bg-[#0b1020] border border-blue-900/30 rounded-2xl p-6 flex items-start gap-5">
+                    <div class="w-12 h-12 rounded-lg royal-gradient flex items-center justify-center text-white flex-shrink-0 shadow-lg royal-glow">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-1">Working Hours</h4>
+                        <p class="text-slate-400 text-sm">24 Hours / 7 Days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                     -->
+    <!-- ========================================== -->
+    <footer class="bg-[#05070f] border-t border-blue-900/30 py-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center text-xs text-slate-500">
+            &copy; 2026 ApexDrive Royal Rentals. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
